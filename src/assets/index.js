@@ -26,7 +26,7 @@ import python from "./tech/python.webp";
 import Bosch from "./company/Bosch_logo.png";
 import KAT from "./company/KAT_flutter.png";
 
-import PrescriptoWeb from "./projects/PrescriptoWeb.png";
+import PrescriptoWeb from "./projects/prescriptoWeb.png";
 import Crypto_web from "./projects/Crypto_web.png";
 
 export {
