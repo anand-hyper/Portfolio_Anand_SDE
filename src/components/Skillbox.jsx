@@ -1,20 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// Import all images
+import htmlImg from "../assets/tech/html.png";
+import cssImg from "../assets/tech/css.png";
+import tailwindImg from "../assets/tech/tailwind.png";
+import javascriptImg from "../assets/tech/javascript.png";
+import reactjsImg from "../assets/tech/reactjs.png";
+import nodejsImg from "../assets/tech/nodejs.png";
+import mongoImg from "../assets/tech/mongodb.png";
+import mysqlImg from "../assets/tech/mysql.png";
+import gitImg from "../assets/tech/git.png";
+import pyImg from "../assets/tech/python.webp";
+
+///src/assets/tech/${skill.icon}`
+
 const SkillBox = () => {
   const skills = [
-    { name: "HTML5", icon: "html.png" },
-    { name: "CSS3", icon: "css.png" },
-    { name: "Tailwind", icon: "tailwind.png"},
-    { name: "JavaScript", icon: "javascript.png" },
-    { name: "ReactJS", icon: "reactjs.png" },
-    { name: "NodeJS", icon: "nodejs.png" },
-    
-    { name: "MongoDB", icon: "mongodb.png" },
-    { name: "MySQL", icon: "mysql.png" },
-    { name: "git", icon: "git.png" },
-    { name: "Python", icon: "python.webp"},
-   
+    { name: "HTML5", icon: htmlImg },
+    { name: "CSS3", icon: cssImg },
+    { name: "Tailwind", icon: tailwindImg },
+    { name: "JavaScript", icon: javascriptImg },
+    { name: "ReactJS", icon: reactjsImg },
+    { name: "NodeJS", icon: nodejsImg },
+    { name: "MongoDB", icon: mongoImg },
+    { name: "MySql", icon: mysqlImg },
+    { name: "Git", icon: gitImg },
+    { name: "Python", icon: pyImg }
   ];
 
   return (
@@ -30,7 +42,7 @@ const SkillBox = () => {
           >
             <div className="w-16 h-16 mb-2 group-hover:scale-110 transition-transform duration-300">
               <img 
-                src={`/src/assets/tech/${skill.icon}`} 
+                src={skill.icon} 
                 alt={skill.name}
                 className="w-full h-full object-contain"
               />
