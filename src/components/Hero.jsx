@@ -3,6 +3,8 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
 import { personalInfo } from "../constants";
+import SkillBox from "./Skillbox";
+ // Add this import
 
 const Hero = () => {
   return (
@@ -24,14 +26,9 @@ const Hero = () => {
             Innovative {personalInfo.role}, <br className="sm:block hidden" />
             building web and mobile applications
           </p>
+          <SkillBox /> 
         </div>
       </div>
-
-      
-      
-      
-        
-      
     </section>
   );
 };

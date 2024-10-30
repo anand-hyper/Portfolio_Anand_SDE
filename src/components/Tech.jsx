@@ -17,7 +17,7 @@ const Tech = () => {
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((technology, index) => (
         <div
-          className="w-28 h-28 mb-2 relative"
+          className="w-15 h-28 mb-2 relative"
           key={technology.name}
           onMouseEnter={() => handleMouseEnter(index, technology.name)}
           onMouseLeave={handleMouseLeave}
